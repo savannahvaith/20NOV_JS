@@ -46,3 +46,16 @@
 * How they work 
 * Arrow functions
 * Function expressions
+
+`06-Callbacks-and-promises/callbacks.js`
+* What they are
+* How they work 
+* Taking user input in one function and using the value in another
+
+`06-Callbacks-and-promises/promises.js`
+* Placeholder for some data that will be available, immediately, some time in the future or never at all
+* chaining `.then()`
+* `resolve()` & `reject()`
+* If `resolve()` go to the first `.then()`
+* If `reject()` go to the first `.catch()`
+* Once handled, will execute any `.then()` that comes after. 
