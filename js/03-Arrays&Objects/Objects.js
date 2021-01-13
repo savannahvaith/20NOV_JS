@@ -8,18 +8,20 @@ student["id"] = 123;
 // student.name = "Nick"; // Not best practise to override an existing property
 
 // Method 2:
-let savannah = { name: "Sav", id: 123, courseCode: "JSFUND" };
+let person = { name: "Sav", id: 123, courseCode: "JSFUND" };
 
-for (let temp in savannah) {
-    console.log(savannah[temp]);
+// Looping through the object Person 
+for (let temp in person) {
+    console.log(person[temp]);
 }
 
 console.log(student);
-console.log(savannah);
+console.log(person);
 
-console.log(savannah.name);
-console.log(savannah['id']);
+console.log(person.name);
+console.log(person['id']);
 
+// Creating an array with multiple objects inside
 const classroom = [
     { name: "sav", id: 123, courseCode: "JSFUND" },
     { name: "jim", id: 234, courseCode: "JSFUND" },
@@ -30,6 +32,7 @@ const classroom = [
     false
 ]
 
+// looping through the array, then looping through the object
 for (let i = 0; i < classroom.length; i++) {
     console.log(`the current index is: ${i}, ${classroom[i]}`);
     for (let tempvariablename in classroom[i]) {
