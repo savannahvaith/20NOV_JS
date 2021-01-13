@@ -48,6 +48,9 @@ let myJSONObject = {
     ]
 }
 
+myJSONObject.Users.push({"username":"Savizzlee", "password":"hihihi"});
+console.log(myJSONObject);
+
 // JSON PARSE = Takes in a string, and spits out an object
 let strObj = `{"name":"sav"}`; 
 console.log(typeof strObj);
