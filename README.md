@@ -19,3 +19,30 @@
  * Strict equality 
  * Strict inequality
  
+`03-Arrays & Objects/ Arrays.js`
+* Initialisation 
+* Push() 
+* Pop()
+* Shift() 
+* Unshift()
+
+`03-Arrays & Objects/Objects.js`
+* Initialisation 
+* Accessing object keys 
+* Looping through objeccts in an array 
+* JSON 
+
+`04-Scope/scope.js`
+* Scope in a function 
+* Explanation of why var is (n)
+
+`04-Scope/Global&Local.js`
+* Global and Local scope explained
+* Flag example
+* Always look within before you look else where!
+
+`05-Functions/functions.js`
+* What they are
+* How they work 
+* Arrow functions
+* Function expressions
