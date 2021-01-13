@@ -34,7 +34,7 @@
 
 `04-Scope/scope.js`
 * Scope in a function 
-* Explanation of why var is (n)
+* Explanation of why var is :thumbsdown:
 
 `04-Scope/Global&Local.js`
 * Global and Local scope explained
