@@ -21,6 +21,8 @@
                 <input type="number" class="form-control" id="secondNum" 
                 placeholder="Second Number:" name="secondNum" />
             </div>
+        </div>
+        <div class="row">
             <br/>
             <div class="col-md text-center">
                 <button class="btn btn-primary" id="+" onClick="add();">&plus;</button>
@@ -28,12 +30,18 @@
                 <button class="btn btn-primary" id="*" onClick="multiply();">&times;</button>
                 <button class="btn btn-primary" id="/" onClick="divide();">&sol;</button>
             </div>
+        </div>
+        <br/>
+        <div class="row">
             <div class="col-md">
                 <input type="text" class="form-control" id="result" 
                 name="result" placeholder="Result" disabled/>
             </div>
             <br/>
-            <div class="col-md">
+        </div>
+        <div class="row">
+            <div class="col-md text-center">
+                <br/>
                 <button class="btn btn-danger" id="c" 
                 onclick="clearValues();">Clear Values</button>
                 <button class="btn btn-danger" id="clearHistory" onclick="clearHistory();">Clear History</button>
