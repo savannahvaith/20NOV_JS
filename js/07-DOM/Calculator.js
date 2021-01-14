@@ -56,3 +56,7 @@ const divide = () => {
     printResult(newResult);
     addToHistory(num1, "/", num2, newResult);
 }
+
+window.onload = () => {
+    prompt("Tell me how you're feeling today...");
+};
