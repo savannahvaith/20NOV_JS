@@ -15,7 +15,8 @@ const retrieveData = () => {
                     console.log(json.data);
                     for (let i = 0; i < json.data.length; i++) {
                         let p = document.createElement("p");
-                        p.setAttribute("class", "customer");
+                        // p.setAttribute("class", "customer");
+                        p.className = "customer"
                         let info = document.createTextNode(json.data[i].first_name);
                         p.appendChild(info);
                         peeps.appendChild(p);
