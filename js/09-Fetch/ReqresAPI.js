@@ -45,8 +45,8 @@ const registerSuccessful = () => {
     fetch("https://reqres.in/api/register", {
         method: "POST",
         body: JSON.stringify({
-            "email": "eve.holt@reqres.in",
-            "password": "pistol"
+            email: "eve.holt@reqres.in",
+            password: "pistol"
         }),
         headers: {
             "Content-Type": "application/json"
@@ -60,8 +60,8 @@ const loginSuccessful = () => {
     fetch("https://reqres.in/api/login", {
         method: "POST",
         body: JSON.stringify({
-            "email": "eve.holt@reqres.in",
-            "password": "pistol"
+            email: "eve.holt@reqres.in",
+            password: "pistol"
         }),
         headers: {
             "Content-Type": "application/json"
