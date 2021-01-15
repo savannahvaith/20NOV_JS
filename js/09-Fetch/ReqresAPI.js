@@ -15,10 +15,18 @@ const retrieveData = () => {
                     console.log(json.data);
                     for (let i = 0; i < json.data.length; i++) {
                         let p = document.createElement("p");
+                        let a = document.createElement("a");
                         // p.setAttribute("class", "customer");
-                        p.className = "customer"
+                        p.className = "customer";
+
+                        a.setAttribute("href", `https://reqres.in/api/users/${json.data[i].id}`);
+
+                        let anchorInfo = document.createTextNode("id");
                         let info = document.createTextNode(json.data[i].first_name);
+                        
                         p.appendChild(info);
+                        a.appendChild(anchorInfo);
+                        p.appendChild(a);
                         peeps.appendChild(p);
                     }
                 })
@@ -85,46 +93,3 @@ const updateFunction = () => {
     .then(json => console.log(json))
     .catch(err => console.error(err));
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-function registerUser() {
-    fetch('https://reqres.in/api/users', {
-        method: 'POST',
-        body: JSON.stringify({
-            email: 's.v@hotmail.co.uk',
-            password: 'password'
-        }),
-        headers: {
-            'Content-Type': "application/json"
-        }
-    })
-        .then(response => response.json())
-        .then(json => console.log(json))
-        .catch(err => console.error('Stop trying to make fetch happen', err));
-}
-
-function failUser() {
-    fetch('https://reqres.in/api/register', {
-        method: 'POST',
-        body: JSON.stringify({
-            email: 's.v@hotmail.co.uk',
-        })
-    })
-        .then(response => response.json())
-        .then(json => console.log(json))
-        .catch(err => console.error('Stop trying to make fetch happen', err));
-}
-
